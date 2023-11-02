@@ -6,7 +6,7 @@ import axios from "axios";
 import { Select } from "antd";
 import { useNavigate } from "react-router-dom";
 const { Option } = Select;
-
+axios.defaults.baseURL = "https://ecomm-backend-0vn3.onrender.com"
 const CreateProduct = () => {
   const navigate = useNavigate();
   const [categories, setCategories] = useState([]);

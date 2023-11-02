@@ -3,7 +3,7 @@ import Layout from "./../components/Layout/Layout";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/ProductDetailsStyles.css";
-
+axios.defaults.baseURL = "https://ecomm-backend-0vn3.onrender.com"
 const ProductDetails = () => {
   const params = useParams();
   const navigate = useNavigate();

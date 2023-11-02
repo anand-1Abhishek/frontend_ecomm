@@ -4,7 +4,9 @@ import AdminMenu from "./../../components/Layout/AdminMenu";
 import toast from "react-hot-toast";
 import axios from "axios";
 import CategoryForm from "../../components/Form/CategoryForm";
+
 import { Modal } from "antd";
+axios.defaults.baseURL = "https://ecomm-backend-0vn3.onrender.com"
 const CreateCategory = () => {
   const [categories, setCategories] = useState([]);
   const [name, setName] = useState("");

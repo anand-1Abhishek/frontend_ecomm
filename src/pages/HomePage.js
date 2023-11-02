@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import Layout from "./../components/Layout/Layout";
 import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
+axios.defaults.baseURL = "https://ecomm-backend-0vn3.onrender.com"
 
 const HomePage = () => {
   const navigate = useNavigate();

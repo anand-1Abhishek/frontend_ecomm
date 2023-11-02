@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+axios.defaults.baseURL = "https://ecomm-backend-0vn3.onrender.com"
 export default function useCategory() {
   const [categories, setCategories] = useState([]);
 
